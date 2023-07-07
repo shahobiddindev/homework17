@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --bck-header: #fff;
+  --text-color: #4f5665;
+  --btn-premary-color: #f53855;
+  --text-bold-color: #0b132a;
+}
+input:hover {
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* header starts */
+
+.navbar {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--bck-header);
+}
+.navbar__container,
+.navbar__list,
+.navbar__register {
+  display: flex;
+}
+.navbar__container {
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__list {
+  gap: 40px;
+}
+.navbar__link {
+  color: var(--text-color);
+  font-weight: 400;
+}
+.navbar__btn {
+  padding: 13px 45px;
+  border: 1px solid#fff;
+  background-color: transparent;
+}
+.navbar__btn a {
+  color: var(--text-bold-color);
+  font-weight: 500;
+}
+.navbar__link,
+.navbar__btn a {
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+}
+.navbar__btn:hover {
+  border: 1px solid var(--btn-premary-color);
+  border-radius: 50px;
+  color: var(--btn-premary-color);
+}
+.navbar__btn:hover a {
+  color: var(--btn-premary-color);
+}
+
+/* header end */
+
+/* mainning about section qismi boshlandi */
+.about {
+  padding-top: 76px;
+}
+.about__container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 103px;
+}
+.about__left,
+.about__right {
+  width: 50%;
+}
+.about__header,
+.about__paragraph {
+  font-family: Rubik;
+  font-style: normal;
+}
+.about__header {
+  color: var(--text-bold-color);
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 70px;
+}
+.about__paragraph {
+  margin-top: 20px;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.about__btn {
+  margin-top: 50px;
+  padding: 17.5px 77.5px;
+  border: 2px solid var(--btn-premary-color);
+  border-radius: 10px;
+  color: var(--btn-premary-color);
+  background-color: transparent;
+  /* btn ning contenti uchun */
+  color: var(--btn-premary-color);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+}
+.about__btn:hover {
+  background-color: var(--btn-premary-color);
+  color: var(--bck-header);
+  box-shadow: 0px 26px 40px -18px rgba(245, 54, 54, 0.45);
+}
+/* mainning about section qismi tugashi */
+
+/* mainning about card qismi boshlandi */
+.about__card {
+  padding: 37.21px 91px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 43px 57px -18px rgba(13, 16, 37, 0.07);
+  margin-bottom: 95px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  gap: 36.5px;
+}
+.card img {
+  padding: 15.5px;
+  border-radius: 50%;
+  background-color: #ffecec;
+}
+.card_text h2,
+.card_text p {
+  font-family: Rubik;
+  font-style: normal;
+  line-height: 30px;
+}
+.card_text h2 {
+  margin-bottom: 5px;
+  color: var(--text-bold-color);
+  font-size: 25px;
+  font-weight: 700;
+}
+.card_text p {
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* mainning features section qismi boshlandi */
+.features__container {
+  display: flex;
+  align-items: end;
+  gap: 170px;
+  padding-bottom: 126px;
+}
+.features_lift,
+.features_right {
+  width: 50%;
+}
+.features__header {
+  margin-bottom: 20px;
+  color: #0b132a;
+  font-family: Rubik;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px;
+}
+.features__paragraph {
+  margin-bottom: 20px;
+  color: #4f5665;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.features__list {
+  display: grid;
+  row-gap: 15px;
+}
+.features__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.features__item p {
+  color: #4f5665;
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+/* mainning features section qismi tugadi */
+
+/* mainning Pricing section qismi boshlandi */
+.pricing {
+  background: linear-gradient(180deg, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%);
+  padding-top: 80px;
+}
+.pricing__text h2,
+.pricing__text p {
+  text-align: center;
+  font-family: Rubik;
+  font-style: normal;
+}
+.pricing__text h2 {
+  color: var(--text-bold-color);
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 50px;
+}
+.pricing__text p {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.pricing__box {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+.box {
+  padding-top: 79.63px;
+  padding-bottom: 50px;
+  width: 330px;
+  height: 760px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  background: #fff;
+}
+.box__img,
+.box__header,
+.box__list {
+  text-align: center;
+}
+.box__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.box__img {
+  padding-left: 92.55px;
+  margin-bottom: 30px;
+}
+.box__header {
+  color: #0b132a;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.box__list {
+  margin-top: 30px;
+  padding-left: 70px;
+}
+.box__item {
+  margin-bottom: 10px;
+}
+.box__item p {
+  color: #4f5665;
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.box__btn p {
+  margin-bottom: 20px;
+  color: #0b132a;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.box__btn button {
+  margin-left: 76px;
+  padding: 13px 62.93px;
+  border-radius: 50px;
+  border: 2px solid var(--btn-premary-color);
+  background-color: transparent;
+  /* content qismi */
+  color: var(--btn-premary-color);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.box__btn button:hover {
+  background-color: var(--btn-premary-color);
+  color: var(--bck-header);
+  box-shadow: 0px 26px 40px -18px rgba(245, 54, 54, 0.45);
+}
+.box__btn {
+  margin-top: 130px;
+}
+.box__btn2 {
+  margin-top: 90px;
+}
+.box__btn3 {
+  margin-top: 50px;
+}
+.testimonials {
+  margin-top: 150px;
+}
+.testimonials__text {
+  text-align: center;
+  margin-bottom: 155.81px;
+}
+.testimonials__text h2 {
+  margin-bottom: 20px;
+  color: #0b132a;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px;
+}
+.testimonials__text p {
+  color: #4f5665;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.map {
+  width: 1180px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.testimonials__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.estimonials__img {
+  margin: 0;
+  padding: 0;
+}
